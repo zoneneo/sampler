@@ -1,0 +1,12 @@
+[Unit]
+Description=sampler
+Wants=network-online.target
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/sampler/sampler
+
+
+[Install]
+WantedBy=multi-user.target
